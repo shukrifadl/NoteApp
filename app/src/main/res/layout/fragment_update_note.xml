@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewUpdate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="@dimen/small_margin"
+            app:cardCornerRadius="@dimen/small_radius"
+            android:layout_margin="@dimen/mid_margin"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="696dp"
+                android:orientation="vertical"
+                android:padding="@dimen/mid_margin">
+            <EditText
+                    android:id="@+id/etNoteTitleUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/title"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/text_title_size"
+                    android:ems="10"
+                    android:inputType="text"/>
+            
+            <EditText
+                    android:id="@+id/etNoteBodyUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/note_body_hint"
+                    android:gravity="start|top"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginTop="@dimen/mid_margin"
+                    android:ems="10"
+                    android:inputType="textMultiLine"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="mid_margin">16dp</dimen>
+    <dimen name="big_margin">32dp</dimen>
+    <dimen name="radius">10dp</dimen>
+    <dimen name="large_padding">50dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="small_radius">5dp</dimen>
+    <dimen name="text_title_size">24sp</dimen>
+    <dimen name="elevation">8dp</dimen>
+    <dimen name="max_height">160dp</dimen>
+</resources>
