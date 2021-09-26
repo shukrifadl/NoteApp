@@ -4,38 +4,44 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:background="@color/white">
+              android:backgroundTint="@android:color/transparent">
     
-    <androidx.cardview.widget.CardView android:layout_width="match_parent"
-                                       android:layout_height="match_parent"
-                                       android:layout_margin="@dimen/small_margin"
-                                       android:background="@color/white"
-                                       app:cardCornerRadius="@dimen/small_radius"
-                                       app:cardElevation="@dimen/elevation">
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/small_margin"
+            app:cardCornerRadius="@dimen/small_radius"
+            app:cardElevation="@dimen/elevation"
+            android:backgroundTint="@color/color2">
         
         <LinearLayout android:layout_width="match_parent"
                       android:layout_height="match_parent"
                       android:padding="@dimen/mid_margin"
-                      android:orientation="vertical">
+                      android:orientation="vertical"
+                      android:background="@color/color2">
             
             <TextView
                     android:id="@+id/tv_note_title"
                     android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="@string/note_title"
-                      android:textSize="@dimen/text_size"
-                      android:textStyle="bold"/>
+                    android:layout_height="wrap_content"
+                    android:text="@string/note_title"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/hintColor"
+                    android:background="@android:color/transparent"/>
             
             <TextView
                     android:id="@+id/tv_note_body"
                     android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:layout_marginTop="@dimen/mid_margin"
-                      android:maxHeight="@dimen/max_height"
-                      android:text="@string/note_body"
-                      android:textColor="@color/hintColor"
-                      android:textSize="@dimen/text_size"
-                      android:textStyle="bold"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mid_margin"
+                    android:maxHeight="@dimen/max_height"
+                    android:text="@string/note_body"
+                    android:textColor="@color/hintColor"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    android:background="@android:color/transparent"
+            />
         
         </LinearLayout>
     </androidx.cardview.widget.CardView>
